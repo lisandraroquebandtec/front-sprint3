@@ -13,7 +13,7 @@
 
 <body>
 
-  <div id="mensagemView"></div>
+  <div id="messageView"></div>
 
   <div class="page-container">
     <header class="header">
@@ -39,7 +39,7 @@
         <div class="header__search">
           <img class="header__icon" src="assets/search.svg">
           <input class="header__input" type="search" placeholder="O que você está procurando?"
-            oninput="produtoController.filtra(event)" />
+            oninput="productController.filter(event)" />
         </div>
 
         <nav class="header__menu menu">
@@ -113,29 +113,29 @@
         <ul class="filters__list">
           <li class="filters__item">
             <span class="filters__label">Tamanho</span>
-            <img class="filters__img" src="assets/filter.svg" >
+            <img class="filters__img" src="assets/filter.svg">
           </li>
           <li class="filters__item">
             <span class="filters__label">Cor</span>
-            <img class="filters__img" src="assets/filter.svg" >
+            <img class="filters__img" src="assets/filter.svg">
           </li>
           <li class="filters__item">
             <span class="filters__label">Departamento</span>
-            <img class="filters__img" src="assets/filter.svg" >
+            <img class="filters__img" src="assets/filter.svg">
           </li>
           <li class="filters__item">
             <span class="filters__label">Categoria</span>
-            <img class="filters__img" src="assets/filter.svg" >
+            <img class="filters__img" src="assets/filter.svg">
           </li>
           <li class="filters__item">
             <span class="filters__label">Manga</span>
-            <img class="filters__img" src="assets/filter.svg" >
+            <img class="filters__img" src="assets/filter.svg">
           </li>
         </ul>
       </section>
 
       <section class="main__products products">
-        <div id="produtosView"></div>
+        <div id="productsView"></div>
       </section>
     </main>
     <footer class="footer">
@@ -409,27 +409,27 @@
   </div>
 
   <!-- Models -->
-  <script src="js/app/models/Mensagem.js"></script>
-  <script src="js/app/models/Produto.js"></script>
-  <script src="js/app/models/ListaProdutos.js"></script>
+  <script src="js/app/models/Message.js"></script>
+  <script src="js/app/models/Product.js"></script>
+  <script src="js/app/models/ProductList.js"></script>
 
   <!-- Services -->
   <script src="js/app/services/ProxyFactory.js"></script>
   <script src="js/app/services/HttpService.js"></script>
-  <script src="js/app/services/ProdutoService.js"></script>
+  <script src="js/app/services/ProductService.js"></script>
 
   <!-- Helpers -->
   <script src="js/app/helpers/Bind.js"></script>
 
   <!-- Controllers -->
-  <script src="js/app/controllers/ProdutoController.js"></script>
+  <script src="js/app/controllers/ProductController.js"></script>
 
   <!-- Views -->
   <script src="js/app/views/View.js"></script>
-  <script src="js/app/views/MensagemView.js"></script>
-  <script src="js/app/views/ProdutosView.js"></script>
+  <script src="js/app/views/MessageView.js"></script>
+  <script src="js/app/views/ProductsView.js"></script>
   <script>
-    const produtoController = new ProdutoController();
+    const productController = new ProductController();
   </script>
 
 </body>

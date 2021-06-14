@@ -1,6 +1,9 @@
 class View {
-  constructor(elemento) {
-    this._elemento = elemento;
+  constructor(element) {
+    if (!element) {
+      throw new Error('Elemento deve ser especificado!');
+    }
+    this._element = element;
   }
 
   template() {
@@ -8,6 +11,6 @@ class View {
   }
 
   update(model) {
-    this._elemento.innerHTML = this.template(model);
+    this._element.innerHTML = this.template(model);
   }
 }
