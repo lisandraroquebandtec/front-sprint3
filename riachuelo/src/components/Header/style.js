@@ -66,11 +66,11 @@ export const HeaderSearch = styled.div`
 `;
 
 export const SearchIcon = styled.img`
-  width: 24px;
+  width: 30px;
   opacity: 26%;
-  top: 8px;
+  top: 9px;
   position: absolute;
-  padding-left: 10px;
+  padding-left: 8px;
   color: rgba(0, 0, 0, 0.26);
   line-height: 40px;
 `;
